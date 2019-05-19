@@ -2,7 +2,7 @@ import Test.Hspec
 import Test.QuickCheck
 import Generic.Random
 
-import Lib
+import Lib hiding (main)
 
 instance Arbitrary Sum where
   arbitrary = genericArbitraryU
