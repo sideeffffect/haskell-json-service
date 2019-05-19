@@ -34,22 +34,22 @@ instance ToJSON Person where
 -}
 
 data Sum = Sum
-    { x :: Int
-    , y :: Int
+    { getX :: Int
+    , getY :: Int
     }
     deriving (Show, Generic)
 instance FromJSON Sum
 
 {- HLINT ignore Result -}
 data Result = Result
-    { result :: Int
+    { getResult :: Int
     }
     deriving (Show, Eq, Generic)
 instance ToJSON Result
 
 performSum :: Sum -> Result
-performSum s = let r = x s + y s
-               in Result r
+performSum s = let r = getX s + getY s
+               in Result { getResult = r }
 
 data App = App
 
