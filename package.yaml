@@ -24,6 +24,10 @@ dependencies:
 
 library:
   source-dirs: src
+  dependencies:
+  - text
+  - yesod
+  - yesod-core
 
 executables:
   haskell-json-service-exe:
@@ -46,3 +50,6 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - haskell-json-service
+    - hspec
+    - QuickCheck
+    - generic-random
