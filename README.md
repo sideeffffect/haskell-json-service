@@ -1,7 +1,7 @@
 # haskell-json-service
 
 ```
-$ stack run
+stack run
 ```
 
 ```
