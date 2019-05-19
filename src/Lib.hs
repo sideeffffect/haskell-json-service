@@ -40,6 +40,7 @@ data Sum = Sum
     deriving (Show, Generic)
 instance FromJSON Sum
 
+{- HLINT ignore Result -}
 data Result = Result
     { result :: Int
     }
