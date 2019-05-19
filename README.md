@@ -1,5 +1,7 @@
 # haskell-json-service
 
+[![Build Status](https://travis-ci.org/sideeffffect/haskell-json-service.svg?branch=master)](https://travis-ci.org/sideeffffect/haskell-json-service)
+
 ```
 stack run
 ```
